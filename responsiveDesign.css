@@ -1,0 +1,121 @@
+@media screen and (max-width: 800px){
+    
+    .services {
+        padding: 40px 0;
+    }
+    .services .content-cards {
+        flex-direction: column;
+        align-items: space-evenly;
+    }
+
+    .services .content-cards .card {
+        width: 60%;
+    }
+
+    .services .content-cards .card:nth-child(2) {
+        margin: 80px 0;
+    }
+   
+    .grid {
+        grid-template-rows: 100px, 400px;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    header .grid .message {
+        grid-column: 1/-1;
+        padding-left: 5px;
+    }
+
+    header .grid .message h1 {
+        margin-top: 40px;
+    }
+
+    header .grid .img-header {
+        width: 100%;
+        grid-column: 1/-1;
+        text-align: center;
+    }
+
+
+    /* MISSION */
+    .mission {
+        height: 700px;
+    }
+
+    .mission .grid {
+        grid-row: 1fr 1fr;
+        gap: 0;
+        padding: 80px 0;
+    }
+
+    .mission .grid .startups {
+        grid-column: 1/-1;
+        grid-row: 1;
+    }
+
+    .mission .grid .img-mission {
+        grid-row: 2;
+        grid-column: 1/-1;
+        padding-top: 20px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 400px){
+    img {
+        width: 200px !important
+    }
+
+    .services .content-cards .card {
+        width: 90%;
+    }
+
+    .grid {
+        row-gap: 20px;
+    }
+
+    /* About */
+    .about .grid {
+        height: auto;
+        grid-template-rows: 150px 300px;
+    }
+    
+    .about .grid .about-geader {
+        height: 200px !important;
+    }
+
+    .about .grid .years{
+        flex-direction: column;
+        overflow: hidden;
+       
+        padding-bottom: 10px;
+        align-items: center;
+        justify-content: flex-start;
+        padding-bottom: 40px;
+    }
+    
+    .about .years .year {
+        width: 150px;
+        height: 50px !important;
+        
+        padding: 5px 0;
+        border-bottom: 0.2px solid rgba(226, 226, 226, 0.548);
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+
+    /* footer */
+    footer .redes {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .footer .redes  a {
+        margin: 10px 0;
+    }
+}
